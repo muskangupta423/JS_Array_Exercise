@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1,0,2,3,4,0,5,2,7,2,0,2];
+        var res=[]
+        for(let x=0;x<arr.length;x++)
+        {
+            for(let y=x+1;y<arr.length;y++)
+            {
+                if(arr[y]==arr[x])
+                {
+                    res.push(arr[y])
+                    break
+                }
+            }
+        }
+        var result=new Set(res);
+        console.log(result)
+    </script>
+</body>
+</html>
