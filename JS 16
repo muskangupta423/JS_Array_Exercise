@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var start=window.prompt("Enter the start year")
+        var end=window.prompt("Enter the end year")
+        var flag=0
+        for(let i=start;i<=end;i++)
+        {
+            if(i%100===0)
+            {
+                if(i%400===0)
+                    flag=1
+            }
+            else if(i%4===0)
+            {
+                flag=1
+            }
+            if(flag==1)
+                console.log(i+" is a leap year"+"</br>")
+            flag=0
+        }
+    </script>
+</body>
+</html>
