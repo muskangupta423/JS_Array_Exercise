@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var str=window.prompt("Enter the string")
+        var str2=""
+        function myfunc(str)
+        {
+            for(let x=0;x<str.length;x++)
+            {
+                if(str[x]==str[x].toLowerCase())
+                {
+                    str2+=str[x].toUpperCase()
+                }
+                else
+                    str2+=str[x].toLowerCase()
+            }
+            return str2
+        }
+        document.getElementById("demo").innerHTML=myfunc(str)
+      
+    </script>
+
+
+</body>
+</html>
