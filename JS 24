@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var arr=[NaN, 0, 15, false, -22, '',undefined, 47, null]
+        var resultant=[]
+        var index=0
+        for(let x=0;x<arr.length;x++)
+        {
+            const value=arr[++index]
+            if(value)
+            {
+                resultant.push(value)
+            }
+        }
+        document.getElementById("demo").innerHTML=resultant
+    </script>
+</body>
+</html>
