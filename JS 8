@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var arr=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+        function myfunc(arr)
+        {
+            let freq=0
+            let max=0
+            let element
+            for(let i=0;i<arr.length;i++)
+            {
+                for(let j=i;j<arr.length;j++)
+                {
+                    if(arr[i]==arr[j])
+                        freq++
+                }
+                if(freq>max)
+                {
+                    max=freq
+                    element=arr[i]
+                }
+                freq=0
+            }
+            return element+" "+max+" times"
+
+        }
+        document.getElementById("demo").innerHTML=myfunc(arr)
+      
+    </script>
+
+
+</body>
+</html>
