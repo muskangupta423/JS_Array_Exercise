@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var arr_length=6
+        var value=2
+    function array_filled(arr_length, value){
+        var arr=[]
+        for(let x=0;x<arr_length;x++)
+            arr.push(value)
+        return arr
+}
+
+console.log(array_filled(arr_length, value));
+
+    </script>
+</body>
+</html>
