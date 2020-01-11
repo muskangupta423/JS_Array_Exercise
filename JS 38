@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var arr=[10,20,30,40,50]
+        var from_pos=0
+        var at_pos=2
+    function array_move(arr,from_pos,at_pos){
+        var element=arr[from_pos]
+        arr.splice(from_pos,1)
+        arr.splice(at_pos,0,element)
+        return arr
+}
+
+console.log(array_move(arr, from_pos,at_pos));
+
+    </script>
+</body>
+</html>
