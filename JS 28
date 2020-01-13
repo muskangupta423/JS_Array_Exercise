@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+       function longest_common_subseq(arr1){
+            var arr=arr1.concat().sort()
+            var a1=arr[0],an=arr[arr.length-1],i=0
+            while(i<arr.length && a1.charAt(i)==an.charAt(i)){
+                i++
+            }
+            return a1.substr(0,i)
+
+       }
+       console.log(longest_common_subseq(['go','google']))
+       console.log(longest_common_subseq(['muski','mus','muskan']))
+    </script>
+</body>
+</html>
